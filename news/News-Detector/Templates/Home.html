@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        header,
+        .foot {
+            width: 100%;
+            background-color: rosybrown;
+        }
+
+        .Logo {
+            size: 0.5rem;
+            height: 40px;
+            width: 50px;
+            /* border-radius: 100%; */
+        }
+
+        /* #dib{
+                margin:8px 375px;
+            padding: 10px 10px;
+            width: 800px;
+        } */
+        .px-24 {
+            padding-top: 4rem;
+            padding-bottom: 3rem;
+        }
+
+        header,
+        .foot {
+            width: 100%;
+            background-color: rosybrown;
+        }
+
+        .p-5 {
+            padding: 1rem !important;
+        }
+        .h{
+  color: #0c0b09e0;
+  font-family: cursive;
+
+}
+.h:hover{
+  color: purple;
+}
+/* .h:visited{
+  color: skyblue;
+} */
+.h:active{
+  color: white;
+}
+body{
+  background-image: url('/static/Nbc13.jpg');
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+.btn {
+      background-color: rosybrown;
+      color: purple;
+      border: 3px solid purple;
+      margin-left: 3rem;
+    }
+    section::before{
+      background-image: url('/static/sect.jpeg');
+    }
+        /* .hm{
+  color: black;
+}
+.hm:hover{
+  color: purple;
+}
+.hm:active{
+  color: blue;
+}
+.hm:visited{
+  color: gray;
+} */
+    </style>
+    <title>INSPECTOR</title>
+</head>
+
+<body>
+  <header class="text-gray-600 bg-rose-100 width-100% head -mt-12 position-fixed  body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mt-12 mb-2 md:mb-0">
+        <img class="Logo invert" src="/static/logo.svg" alt="Error">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" src="/static/logo.svg" fill="none" stroke="currentColor" stroke-linecap="round"
+          stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full"
+          viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg> -->
+        <span class="ml-3 text-xl">INSPECTOR</span>
+      </a>
+      <nav
+        class="md:mr-auto md:ml-4 md:py-1 md:pl-4 font-cursive md:border-l md:border-gray-400 text-lime-400 flex flex-wrap mt-12 mb-2 items-center text-base justify-center">
+        <a class="mr-5 h active:text-blue-600   font-bold text-base hover:text-gray-500 hm active:text-base" href="/home " id="home" onclick="active()" href="home.html"><b>Home</b></a>
+        <a class="mr-5 h hover:text-gray-900 font-bold text-base hm"  href="/about"><b>About</b></a>
+        <a class="mr-5 h hover:text-gray-900 font-bold text-base hm"  href="/Prediction"><b>Prediction</b></a>
+        <a class="mr-5 h hover:text-gray-900 font-bold text-base hm"  href="/contact"><b>Contact Us</b></a>
+      </nav>
+      <!-- <button
+        class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Visit
+        Website
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button> -->
+    </div>
+  </header><hr>
+  <section class="text-black body-font">
+    <div class="text-center mt-28">
+      <p class="sm:text-3xl text-2xl font-small title-font text-black pt-6 my-10 mb-4">You're welcome here in our site.....</p>
+  </div>
+  <div class="mx-auto text-2xl mx-10 px-20">
+    The aim of Our Website is to help news readers to identify bias and misinformation in news articles in a quick and reliable fashion. We have collected news articles with veracity labels from fact-checking websites and used them to train text classification systems to detect fake from real news. You can paste a piece of text and examine its similarity to our collection of true vs. false news articles, or to news from four different types/genre. <br>
+    By clicking the button below, you will reach directly to the Prediction page, where you will be able to enter your news and check whether it it is FAKE or REAL <br>
+        <div class="flex mx-auto items-center"> Enjoy testing! &#128578;
+        </div>
+  </div>
+  </section>
+    <!-- <section class="text-gray-600 body-font">
+        <div class="container px-5 pt-28 pb-8 mx-auto">
+            <h1 class="text-3xl font-medium title-font text-gray-900 ttlm mb-12 text-center">Testimonials</h1>
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class=" bg-gray-100 p-5 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                            <path
+                                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                            </path>
+                        </svg>
+                        <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday
+                            carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo,
+                            post-ironic heirloom try-hard pabst authentic iceland.</p>
+                        <a class="inline-flex items-center">
+                            <img alt="testimonial" src="https://dummyimage.com/106x106"
+                                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                            <span class="flex-grow flex flex-col pl-4">
+                                <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
+                                <span class="text-gray-500 text-sm">UI DEVELOPER</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/2 ">
+                    <div class=" bg-gray-100 p-5 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                            <path
+                                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                            </path>
+                        </svg>
+                        <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday
+                            carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo,
+                            post-ironic heirloom try-hard pabst authentic iceland.</p>
+                        <a class="inline-flex items-center">
+                            <img alt="testimonial" src="https://dummyimage.com/107x107"
+                                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                            <span class="flex-grow flex flex-col pl-4">
+                                <span class="title-font font-medium text-gray-900">Alper Kamu</span>
+                                <span class="text-gray-500 text-sm">DESIGNER</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-4 w-8/12 mx-40 ">
+            <div class=" bg-gray-100 p-4 rounded">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4"
+                    viewBox="0 0 975.036 975.036">
+                    <path
+                        d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                    </path>
+                </svg>
+                <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday
+                    carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo,
+                    post-ironic heirloom try-hard pabst authentic iceland.</p>
+                <a class="inline-flex items-center">
+                    <img alt="testimonial" src="https://dummyimage.com/107x107"
+                        class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                    <span class="flex-grow flex flex-col pl-4">
+                        <span class="title-font font-medium text-gray-900">Alper Kamu</span>
+                        <span class="text-gray-500 text-sm">DESIGNER</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section> -->
+    <button class="flex mx-auto mt-10 text-purple bg-indigo-500 btn btn-primary border-2 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"><a href="/Prediction">Go to Prediction Page</a></button>
+    <div class="text-center mt-20">
+        <p class="sm:text-3xl text-2xl font-small title-font text-gray-900 mt-10 mb-4">You may refer to these sources for the trustworthy news</p>
+    </div>
+    <footer class="text-gray-600 mt-10 text-xl body-font hover:text-purple" id="footer">
+      <div class="container px-5 py-15 mx-auto">
+        <div class="flex flex-wrap md:text-left text-center pt-8 order-first">
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 text-2xl">Political News</h2>
+            <nav class="list-none mb-10 text-xl">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="https://timesofindia.indiatimes.com/politics/news" target="_blank">Times of India</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="https://uspolicy.org/?gclid=EAIaIQobChMIneSc69_H9QIVkN4YCh187AGKEAAYASAAEgLtZvD_BwE" target="_blank">Us Policy</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="https://www.indiatoday.in/politics" target="_blank">India Today</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="https://www.news18.com/politics/" target="_blank">News 18</a>
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 text-2xl">Entertainment News</h2>
+            <nav class="list-none mb-10 text-xl">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="https://timesofindia.indiatimes.com/videolist/3812908.cms" target="_blank">Times of India</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="https://indianexpress.com/section/entertainment/" target="_blank">The Indian Express</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="https://www.indiatoday.in/entertainment" target="_blank">India Today</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="https://www.news18.com/entertainment/" target="_blank">News 18</a>
+              </li>
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 text-2xl">World News</h2>
+            <nav class="list-none mb-10 text-xl">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="https://www.washingtonpost.com/?utm_source=google&utm_medium=acq-intl&utm_campaign=eng-evg&utm_content=INTL_Engagement_Global&utm_keyword=world%20news&gclid=EAIaIQobChMI2czOquPH9QIVhxCRCh0mggOKEAAYAiAAEgLxQvD_BwE" target="_blank">The Washington Post</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="https://indianexpress.com/section/world/" target="_blank">The Indian Express</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="https://www.hindustantimes.com/world-news" target="_blank">Hindustan Times</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="https://www.bbc.com/news/world" target="_blank">BBC World</a>
+              </li>
+              
+            </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 text-2xl">Sports News</h2>
+            <nav class="list-none mb-10 text-xl">
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="https://timesofindia.indiatimes.com/sports" target="_blank">Times of India</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="https://www.cricbuzz.com/" target="_blank">Cricbuzz</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="https://www.indiatoday.in/sports" target="_blank">India Today</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800" href="https://www.bbc.com/sport" target="_blank">BBC Sports</a>
+              </li>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="foot">
+        <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <img class="Logo" src="/static/logo.svg" alt="">
+            <span class="ml-3 text-xl">INSPECTOR</span>
+          </a>
+          <p class="text-sm text-black sm:ml-6 sm:mt-0 mt-4"><b>© 2022 News Detector —</b>
+            <a href="https://instagram.com/priyansh_2603" rel="noopener noreferrer" class="text-black ml-1 hover:font-bold"
+              target="_blank">@Creator</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                viewBox="0 0 24 24">
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                </path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous">
+    
+      </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

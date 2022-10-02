@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .Logo {
+      size: 0.5rem;
+      height: 40px;
+      width: 50px;
+      /* border-radius: 100%; */
+    }
+
+    header,
+    .foot {
+      width: 100%;
+      background-color: rosybrown;
+    }
+
+    .p-5 {
+      padding: 1rem !important;
+    }
+    .h{
+  color: #0c0b09e0;
+  font-family: cursive;
+
+}
+.h:hover{
+  color: purple;
+}
+/* .h:visited{
+  color: skyblue;
+} */
+.h:active{
+  color: white;
+}
+body{
+  background-color: gainsboro;
+}
+
+    /* .hm{
+  color: black;
+}
+.hm:hover{
+  color: purple;
+}
+.hm:active{
+  color: blue;
+}
+.hm:visited{
+  color: gray;
+} */
+  </style>
+  <title>INSPECTOR
+     </title>
+</head>
+
+<body>
+  <header class="text-gray-600 bg-rose-100 width-100% head -mt-12 position-fixed  body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mt-12 mb-2 md:mb-0">
+        <img class="Logo invert" src="/static/logo.svg" alt="Error">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" src="/static/logo.svg" fill="none" stroke="currentColor" stroke-linecap="round"
+          stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full"
+          viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg> -->
+        <span class="ml-3 text-xl">INSPECTOR</span>
+      </a>
+      <nav
+        class="md:mr-auto md:ml-4 md:py-1 md:pl-4 font-cursive md:border-l md:border-gray-400 text-lime-400 flex flex-wrap mt-12 mb-2 items-center text-base justify-center">
+        <a class="mr-5 h active:text-blue-600   font-bold text-base hover:text-gray-500 hm active:text-base" href="/home " id="home" onclick="active()" href="home.html"><b>Home</b></a>
+        <a class="mr-5 h hover:text-gray-900 font-bold text-base hm"  href="/about"><b>About</b></a>
+        <a class="mr-5 h hover:text-gray-900 font-bold text-base hm"  href="/Prediction"><b>Prediction</b></a>
+        <a class="mr-5 h hover:text-gray-900 font-bold text-base hm"  href="/contact"><b>Contact Us</b></a>
+      </nav>
+      <!-- <button
+        class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Visit
+        Website
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button> -->
+    </div>
+  </header><hr>
+  <section class="text-black body-font">
+    <div class="container px-5 pt-28 pb-15 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="text-3xl font-large title-font my-4 text-gray-900">Our Developer Team</h1>
+        <h2 class="lg:w-2/3 mx-auto text-2xl leading-relaxed text-black">This page includes the contact information of the
+          developer team of this site. Social media contacts of the team members are available with their names
+          below.....</h2>
+      </div>
+      <div class="flex flex-wrap rounded contact border-radius -m-4">
+        <div class="p-4 ml-40 pt-12 lg:w-11/12">
+          <div
+            class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+              src="/static/pd2.jpg">
+            <div class="flex-grow ">
+              <h2 class="title-font font-medium text-lg ">Sajal Garg</h2>
+              <h3 class=" mb-3">UI Developer & Designer</h3>
+              <p class="mb-4">Currently an engineering student at ABES Institute of Technology, Ghaziabad(India) </p>
+              <span class="inline-flex">
+                <a class="text-black" href="https://www.facebook.com/ishu.daksh.2003/" target="_blank">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-black" href="https://www.instagram.com/priyansh_2603/" target="_blank">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-black" href="https://www.linkedin.com/in/priyansh-daksha-8a54a2212/"
+                  target="_blank">
+                  <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path stroke="none"
+                      d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                    <circle cx="4" cy="4" r="2" stroke="none"></circle>
+
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 ml-40  rounded lg:w-11/12">
+          <div
+            class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+              src="/static/dc.jpg">
+            <div class="flex-grow">
+              <h2 class=" font-medium text-lg ">Divya Choudhary</h2>
+              <h3 class="mb-3">Front End Developer</h3>
+              <p class="mb-4">Currently an engineering student at ABES Institute of Technology, Ghaziabad(India) </p>
+              <span class="inline-flex">
+
+                <a class="text-black" href="" target="_blank">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-black" href="https://www.instagram.com/ch._divu_001/" target="_blank">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-black" href="https://www.linkedin.com/in/divya-choudhary-736890216/"
+                  target="_blank">
+                  <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path stroke="none"
+                      d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                    <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                  </svg>
+                </a>
+                <!-- <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a> -->
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 ml-40 lg:w-11/12">
+          <div
+            class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+            <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+              src="/static/Av.jpg">
+            <div class="flex-grow ">
+              <h2 class="title-font font-medium text-lg text-gray-900">
+
+              </h2>
+              <h3 class="mb-3">ML-Model Developer</h3>
+              <p class="mb-4">Currently an engineering student at ABES Institute of Technology, Ghaziabad(India) </p>
+              <span class="inline-flex">
+                <a class="text-black" href="https://www.facebook.com/profile.php?id=100007446335754" target="_blank">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-black" href="https://www.instagram.com/ayush_verma.official/" target="_blank">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-black" href="https://www.linkedin.com/in/ayush-kumar-verma-162362203/"
+                  target="_blank">
+                  <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path stroke="none"
+                      d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                    <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="p-4 lg:w-1/2">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/206x206">
+                <div class="flex-grow sm:pl-8">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Henry Letham</h2>
+                  <h3 class="text-gray-500 mb-3">Designer</h3>
+                  <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                  <span class="inline-flex">
+                    <a class="text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-2 text-gray-500">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div> -->
+      </div>
+    </div>
+  </section>
+  <div class="text-center mb-16">
+    <p class="sm:text-3xl text-2xl font-small title-font text-gray-900 my-10 mb-0">You may refer to these sources for
+      the trustworthy news</p>
+  </div>
+  <footer class="text-gray-600 body-font" id="footer">
+    <div class="container px-5 py-15 pb-2 mx-auto">
+      <div class="flex flex-wrap md:text-left text-center order-first">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 text-2xl">Political News</h2>
+          <nav class="list-none mb-10 text-xl">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="https://timesofindia.indiatimes.com/politics/news" target="_blank">Times of India</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="https://uspolicy.org/?gclid=EAIaIQobChMIneSc69_H9QIVkN4YCh187AGKEAAYASAAEgLtZvD_BwE" target="_blank">Us Policy</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="https://www.indiatoday.in/politics" target="_blank">India Today</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="https://www.news18.com/politics/" target="_blank">News 18</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 text-2xl">Entertainment News</h2>
+          <nav class="list-none mb-10 text-xl">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="https://timesofindia.indiatimes.com/videolist/3812908.cms" target="_blank">Times of India</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="https://indianexpress.com/section/entertainment/" target="_blank">The Indian Express</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="https://www.indiatoday.in/entertainment" target="_blank">India Today</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="https://www.news18.com/entertainment/" target="_blank">News 18</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 text-2xl">World News</h2>
+          <nav class="list-none mb-10 text-xl">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="https://www.washingtonpost.com/?utm_source=google&utm_medium=acq-intl&utm_campaign=eng-evg&utm_content=INTL_Engagement_Global&utm_keyword=world%20news&gclid=EAIaIQobChMI2czOquPH9QIVhxCRCh0mggOKEAAYAiAAEgLxQvD_BwE" target="_blank">The Washington Post</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="https://indianexpress.com/section/world/" target="_blank">The Indian Express</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="https://www.hindustantimes.com/world-news" target="_blank">Hindustan Times</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="https://www.bbc.com/news/world" target="_blank">BBC World</a>
+            </li>
+            
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 text-2xl">Sports News</h2>
+          <nav class="list-none mb-10 text-xl">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="https://timesofindia.indiatimes.com/sports" target="_blank">Times of India</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="https://www.cricbuzz.com/" target="_blank">Cricbuzz</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="https://www.indiatoday.in/sports" target="_blank">India Today</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="https://www.bbc.com/sport" target="_blank">BBC Sports</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="foot">
+      <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          <img class="Logo" src="/static/logo.svg" alt="">
+          <span class="ml-3 text-xl">INSPECTOR</span>
+        </a>
+        <p class="text-sm text-black sm:ml-6 sm:mt-0 mt-4"><b>© 2022 INSPECTOR —</b>
+          <a href="https://instagram.com/priyansh_2603" rel="noopener noreferrer" class="text-black ml-1"
+            target="_blank">@Creator</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <a class="text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

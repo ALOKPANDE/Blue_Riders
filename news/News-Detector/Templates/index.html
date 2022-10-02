@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+   
+
+    label {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .lg:pl-24 {
+      padding-left: 4rem;
+    }
+
+    /* For input box */
+
+    .txt,
+    button {
+      margin: 8px 5px;
+      padding: 5px;
+      color: purple;
+      border: 3px solid purple;
+    }
+
+    .form-control {
+      display: block;
+      width: 30rem;
+      padding: 0.375rem 0.75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border-radius: 0.25rem;
+      transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+
+    /* input {
+      margin-left: 50px;
+    } */
+    body{
+      background-image: url("/static/bac10.jpg");
+      background-size: fit-content;
+      
+      background-repeat: no-repeat;
+      color: white;
+      height: 100%;
+      width: 100%;
+    }
+    /* Form */
+    form {
+      padding: 10px 15px;
+    }
+
+    .mb-3 {
+      align-items: center;
+      justify-content: center;
+    }
+    section{
+      margin-top: 2rem;
+    }
+
+    .e-2 {
+      text-align: center;
+      padding: 5px 55px;
+      margin: 5px 5px;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .py-24 {
+      padding-top: 2rem;
+      padding-bottom: 2.5rem;
+    }
+
+    /* for check button */
+    .btn {
+      background-color: rosybrown;
+      color: purple;
+      border: 2px solid purple;
+      margin-left: 3rem;
+    }
+    /* Boxes */
+    .Prediction{
+      margin-left: 14.5rem;
+      margin-top: 1rem;
+    }
+    .final{
+      background-color: green;
+      border-radius: 25px;
+      padding: 5px 5px;
+      font-weight: bold;
+      border: 3px solid black;
+    }
+    .ml-4 {
+      margin-left: 0px;
+    }
+    .form-label {
+    margin-bottom: 0.5rem;
+    margin-left: 50px;
+}
+    .box-pad{
+      margin-left: 15px;
+    }
+    #fake{
+       align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+    input {
+      margin-left: 50px;
+    }
+    /* Logo */
+    .Logo{
+      size: 0.5rem;
+      height: 40px;
+      width: 50px;
+      /* border-radius: 100%; */
+    }
+    header,.foot{
+      width: 100%;
+      background-color: rosybrown;
+    }
+    .p-5 {
+    padding: 1rem!important;
+}
+.h{
+  color: #0c0b09e0;
+  font-family: cursive;
+
+}
+.h:hover{
+  color: purple;
+}
+/* .h:visited{
+  color: skyblue;
+} */
+.h:active{
+  color: white;
+}
+/* .hm{
+  color: black;
+}
+.hm:hover{
+  color: purple;
+}
+.hm:active{
+  color: blue;
+}
+.hm:visited{
+  color: gray;
+} */
+
+  </style>
+  <title>AN INSPECTOR</title>
+</head>
+
+<body>
+  <header class="text-gray-600 bg-rose-100 width-100% head -mt-12 position-fixed  body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mt-12 mb-2 md:mb-0">
+        <img class="Logo invert" src="/static/logo.svg" alt="Error">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" src="/static/logo.svg" fill="none" stroke="currentColor" stroke-linecap="round"
+          stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full"
+          viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg> -->
+        <span class="ml-3 text-xl">INSPECTOR</span>
+      </a>
+      <nav
+        class="md:mr-auto md:ml-4 md:py-1 md:pl-4 font-cursive md:border-l md:border-gray-400 text-lime-400 flex flex-wrap mt-12 mb-2 items-center text-base justify-center">
+        <a class="mr-5 h active:text-blue-600   font-bold text-base hover:text-gray-500 hm active:text-base" href="/home " id="home" onclick="active()" href="home.html"><b>Home</b></a>
+        <a class="mr-5 h hover:text-gray-900 font-bold text-base hm"  href="/about"><b>About</b></a>
+        <a class="mr-5 h hover:text-gray-900 font-bold text-base hm"  href="/Prediction"><b>Prediction</b></a>
+        <a class="mr-5 h hover:text-gray-900 font-bold text-base hm"  href="/contact"><b>Contact Us</b></a>
+      </nav>
+      <!-- <button
+        class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Visit
+        Website
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button> -->
+    </div>
+  </header><hr>
+  <section class="text-gray-600 -py-25 pt-20 body-font">
+    <div class="container mx-auto flex px-5  md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10  md:mb-0">
+        <img class="object-cover object-center rounded" alt="hero"
+          src="/static/inspect.jpg">
+      </div>
+      <div
+        class="lg:flex-grow md:w-1/2 lg:pl-24 ml-9  md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 ml-9 font-medium text-white">Fake <b>Facts and Information</b> Are Being Toxic Nowadays
+        </h1>
+        <p class="mb-8 leading-relaxed text-white ml-9 e-2">We are here to distinguish the fake facts and information as your wellwisher &#128578;</p>
+        <!-- <div class="flex w-full md:justify-start justify-center items-end">
+                    <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4">
+                        <label for="hero-field" class="leading-7 text-sm text-gray-600">Enter The News And Check</label>
+                        <input type="text" id="hero-field" name="hero-field"
+                            class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 txt focus:ring-2 focus:ring-purple-200 focus:bg-transparent focus:border-purple-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                    <button
+                        class="inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 check rounded btn text-lg">Check Now</button>
+                </div> -->
+        <form action="/Check" method="POST">
+          <div class="mb-3 ml-16">
+            <label for="exampleInputEmail1" class="form-label text-white">Enter The TEXT</label>
+            <input type="text" placeholder="Enter Text Here" class="form-control ml-16 bg-zinc-500 placeholder-gray-400 inp" id="news" name="news">
+            <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+          </div>
+
+
+          <a href="/Check" class="ml-16"><button type="submit" onclick="color()" class="btn btn-primary">Predict Now</button></a>
+        </form>
+        <!-- <p class="text-sm mt-2 text-gray-500 mb-8 w-full"></p> -->
+        <div class="Prediction mr-4" id="predict">
+        <div class="flex lg:flex-row md:flex-col">
+          
+            <div class="bg-gray-100 inline-flex py-3 px-5 pred rounded-lg items-center hover:bg-gray-200 focus:outline-none">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"
+                            viewBox="0 0 512 512">
+                            <path
+                                d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z">
+                            </path>
+                        </svg> -->
+            <div class="mx-16 flex items-start  flex-col bg-emerald-400 leading-none" id="fake">
+              <h1 id="ans" class="ml-4"><b> {{prediction_text}} </b></h1>
+            </div>
+            </div>
+            <!-- <div class="flex box-pad lg:flex-row md:flex-col">
+            <div class="bg-gray-100 inline-flex py-3 px-5 pred rounded-lg items-center hover:bg-gray-200 focus:outline-none"> -->
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"
+                            viewBox="0 0 512 512">
+                            <path
+                                d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z">
+                            </path>
+                        </svg> -->
+            <!-- <div class="ml-4 flex items-start flex-col leading-none" id="real">
+              <h1>Real</h1>
+            </div> -->
+          </div>
+          </div>
+          <!--<div  class="ml-4 flex items-start  flex-col bg-emerald-400 leading-none">{{predi}} </div>-->
+          <!-- <div class="final">{{prediction_text}}</div> -->
+          <!-- <button
+                        class="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-gray-200 Real focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"
+                            viewBox="0 0 305 305">
+                            <path
+                                d="M40.74 112.12c-25.79 44.74-9.4 112.65 19.12 153.82C74.09 286.52 88.5 305 108.24 305c.37 0 .74 0 1.13-.02 9.27-.37 15.97-3.23 22.45-5.99 7.27-3.1 14.8-6.3 26.6-6.3 11.22 0 18.39 3.1 25.31 6.1 6.83 2.95 13.87 6 24.26 5.81 22.23-.41 35.88-20.35 47.92-37.94a168.18 168.18 0 0021-43l.09-.28a2.5 2.5 0 00-1.33-3.06l-.18-.08c-3.92-1.6-38.26-16.84-38.62-58.36-.34-33.74 25.76-51.6 31-54.84l.24-.15a2.5 2.5 0 00.7-3.51c-18-26.37-45.62-30.34-56.73-30.82a50.04 50.04 0 00-4.95-.24c-13.06 0-25.56 4.93-35.61 8.9-6.94 2.73-12.93 5.09-17.06 5.09-4.64 0-10.67-2.4-17.65-5.16-9.33-3.7-19.9-7.9-31.1-7.9l-.79.01c-26.03.38-50.62 15.27-64.18 38.86z">
+                            </path>
+                            <path
+                                d="M212.1 0c-15.76.64-34.67 10.35-45.97 23.58-9.6 11.13-19 29.68-16.52 48.38a2.5 2.5 0 002.29 2.17c1.06.08 2.15.12 3.23.12 15.41 0 32.04-8.52 43.4-22.25 11.94-14.5 17.99-33.1 16.16-49.77A2.52 2.52 0 00212.1 0z">
+                            </path>
+                        </svg>
+                        <span class="ml-4 flex items-start flex-col leading-none">
+                            <span class="text-xs text-gray-600 mb-1">Download on the</span>
+                            <span class="title-font font-medium">App Store</span>
+                            <h1>REAL</h1>
+                        </span>
+                    </button> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="text-center mb-16">
+    <p class="sm:text-3xl text-2xl font-small title-font text-white my-10">You may refer to these sources for the trustworthy news</p>
+</div>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <footer class="text-gray-600 mt-10 text-xl body-font hover:text-purple">
+    <div class="container px-5 py-15 mx-auto">
+      <div class="flex flex-wrap md:text-left text-center order-first">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-white text-sm text-2xl mb-3">Political News</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-black hover:text-gray-800 text-white" href="https://timesofindia.indiatimes.com/politics/news" target="_blank">Times of India</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800 text-white" href="https://uspolicy.org/?gclid=EAIaIQobChMIneSc69_H9QIVkN4YCh187AGKEAAYASAAEgLtZvD_BwE" target="_blank">Us Policy</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800 text-white" href="https://www.indiatoday.in/politics" target="_blank">India Today</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800 text-white" href="https://www.news18.com/politics/" target="_blank">News 18</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-white text-sm mb-3 text-2xl">Entertainment News</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800 text-white" href="https://timesofindia.indiatimes.com/videolist/3812908.cms" target="_blank">Times of India</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800 text-white" href="https://indianexpress.com/section/entertainment/" target="_blank">The Indian Express</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800 text-white" href="https://www.indiatoday.in/entertainment" target="_blank">India Today</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800 text-white" href="https://www.news18.com/entertainment/" target="_blank">News 18</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-white text-sm mb-3 text-2xl">World News</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800 text-white" href="https://www.washingtonpost.com/?utm_source=google&utm_medium=acq-intl&utm_campaign=eng-evg&utm_content=INTL_Engagement_Global&utm_keyword=world%20news&gclid=EAIaIQobChMI2czOquPH9QIVhxCRCh0mggOKEAAYAiAAEgLxQvD_BwE" target="_blank">The Washington Post</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800 text-white" href="https://indianexpress.com/section/world/" target="_blank">The Indian Express</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800 text-white" href="https://www.hindustantimes.com/world-news" target="_blank">Hindustan Times</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800 text-white" href="https://www.bbc.com/news/world" target="_blank">BBC World</a>
+            </li>
+            
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 text-white tracking-widest text-sm mb-3 text-2xl">Sports News</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800 text-white" href="https://timesofindia.indiatimes.com/sports" target="_blank">Times of India</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800 text-white" href="https://www.cricbuzz.com/" target="_blank">Cricbuzz</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800 text-white" href="https://www.indiatoday.in/sports" target="_blank">India Today</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800 text-white" href="https://www.bbc.com/sport" target="_blank">BBC Sports</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="foot">
+      <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          <img class="Logo" src="/static/logo.svg" alt="">
+          <span class="ml-3 text-xl">INSPECTOR</span>
+        </a>
+        <p class="text-sm text-black font-bold sm:ml-6 sm:mt-0 mt-4"><b>© 2022 News Detector —</b>
+          <a href="https://instagram.com/priyansh_2603" rel="noopener noreferrer" class="text-black ml-1"
+            target="_blank">@Creator</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <a class="text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    
+     </script>
+    <script>
+     function color(){
+      let main = document.getElementById('predict');
+      if(prediction_text=="REAL"){
+        document.getElementById('ans').innerHtml = "Accurate";
+      }
+      else{
+        document.getElementById('ans').innerHtml = "InAccurate";
+      }
+      main.style.display = "block";
+      let fake = document.getElementById('fake');
+      let result = document.getElementById('ans');
+     Let web = news;
+     console.log(web);
+      window.open("https://www.google.com/web");
+      if(result=="REAL"){
+        fake.style.backgroundcolor = "green";
+      }
+      else{
+        fake.style.backgroundcolor = "red";
+      }
+     }
+   </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+   
+
+</body>
+
+</html>
